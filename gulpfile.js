@@ -87,7 +87,7 @@ const styles = () => {
 }
 
 const pugInclude = () => {
-	return src('./src/pug/**/*.pug')
+	return src('./src/*.pug')
 		.pipe(pug())
 		.pipe(dest('./dist'))
 		.pipe(browserSync.stream());
