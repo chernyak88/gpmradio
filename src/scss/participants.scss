@@ -225,6 +225,9 @@
         &:before, &:after {
             display: none;
         }
+        &__title {
+            margin-bottom: 60px;
+        }
         &__photo {
             position: absolute;
             top: -30px;
