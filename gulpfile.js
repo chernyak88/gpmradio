@@ -151,7 +151,7 @@ const watchFiles = () => {
 		}
 	});
 	watch('./src/scss/**/*.scss', styles);
-	watch('./src/pug/**/*.pug', pugInclude);
+	watch('./src/*.pug', pugInclude);
 	watch('./src/**.ico', favicon);
 	watch('./src/img/**.jpg', imgToapp);
 	watch('./src/img/**.png', imgToapp);
