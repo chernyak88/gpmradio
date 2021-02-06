@@ -1,0 +1,159 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 738px;
+    max-width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1010;
+
+    &__validate {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        font-size: 20px;
+        background-color: #fff;
+        z-index: 1110;
+
+
+        &--true {
+            color: green;
+            border: 1px solid green;
+        }
+
+        &--false {
+            color: red;
+            border: 1px solid red;
+        }
+    }
+}
+
+.closed {
+    display: none;
+}
+
+.modal-overlay {
+    z-index: 1000;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(../img/sprite.svg#cross);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 35px 70px 50px 70px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    &__label {
+        margin-bottom: 6px;
+    }
+
+    &__input {
+        height: 30px;
+        padding: 0 10px;
+        border: 1px solid #000;
+    }
+
+    &__textarea {
+        height: 133px;
+        resize: none;
+        padding: 10px;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        &--double {
+            flex-direction: row;
+
+            .form__row {
+                width: calc(50% - 10px);
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+
+            .form__row:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &--textarea {
+            position: relative;
+        }
+
+        &--textarea span {
+            position: absolute;
+            right: 0;
+            font-size: 16px;
+        }
+    }
+    &__btn {
+        width: 208px;
+        height: 45px;
+        align-self: flex-start;
+        text-transform: none;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 43px;
+        cursor: pointer;
+    }
+            
+    &__btn--submit {
+        min-height: 60px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .form {
+        padding: 10px 15px 10px;
+    }
+    .close-button {
+        top: 5px;
+        right: 5px;
+    }
+}

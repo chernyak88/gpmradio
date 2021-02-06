@@ -1,0 +1,65 @@
+@import 'reset';
+@import 'mixins';
+@import 'fonts';
+
+body {
+    font-family: FuturaPT;
+    font-size: 18px;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1370px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 204px;
+    height: 60px;
+    background: #C94D35;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+.main {
+    overflow: hidden;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+section h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 51px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 950px) {
+    section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    section h2 {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 30px;
+    }
+}
+
+@import 'header';
+@import 'participate';
+@import 'participants';
+@import 'news';
+@import 'modal';
+@import 'hamburger';

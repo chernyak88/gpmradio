@@ -1,0 +1,134 @@
+.participate {
+    height: 670px;
+    background: #eaeaea;
+    position: relative;
+
+    &:before, &:after {
+        content: '';
+        display: block;
+        background-image: url(../img/sprite.svg#dots-red);
+        background-repeat: repeat-y;
+        height: 265px;
+        width: 137px;
+        position: absolute;
+        z-index: 0;
+    }
+
+    &:before {
+        left: 0;
+        top: 135px;
+    }
+
+    &:after {
+        right: 0;
+        bottom: -170px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        z-index: 1;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        max-width: 370px;
+        background: #f0f0f0;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+        padding: 20px 30px 45px 30px;
+        transition: all .5s;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__item:hover {
+        background: #fff;
+        transform: translateY(-15px);
+        transition: all .5s;
+    }
+
+    &__step {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 32px;
+        color: #C94D35;
+        opacity: 0.3;
+    }
+
+    &__img {
+        display: block;
+        width: 100px;
+        height: auto;
+        margin: 30px auto;
+    }
+
+    &__desc {
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .participate {
+        height: auto;
+
+        &:before {
+            top: 67px;
+        }
+    
+        &:after {
+            bottom: 20px;
+        }
+
+        &__list {
+            width: 90%;
+        }
+
+        &__item {
+            padding: 10px 15px 20px 15px;
+        }
+
+        &__img {
+            width: 90px;
+            margin: 15px auto;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .participate {
+        &:before, &:after {
+            display: none;
+        }
+        &__list {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item {
+            min-height: 250px;
+            width: 100%;
+            padding: 10px 15px 20px 15px;
+            margin-bottom: 20px;
+        }
+    }
+}

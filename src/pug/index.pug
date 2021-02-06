@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Память поколений
+        link(rel="stylesheet", href="../css/main.min.css")
+    body
+        header.header(id="section-0")
+            .container.header__container
+                .header__content
+                    .header__logo
+                    .header__text
+                        p.header__mobile-text С 23 апреля
+                        h1.header__title Память поколений
+                        p У каждого из нас есть близкие, которые стали свидетелями тех военных лет, совершали подвиги и вершили историю! Защищали Родину и боролись за мирную жизнь!
+                        p Поделитесь историей и фотографией своих родных и они прозвучат в эфире Радио Romantika!
+                        a.btn.header__btn.scroll-to(href='#section-1') Участвовать
+                nav.header__nav
+                    each val, index in ['Главная', 'Как участвовать', 'Участники', 'Новости']
+                        a.scroll-to(href='#section-' + index)= val
+        main.main
+            section.participate(id="section-1")
+                .container.participate__container
+                    h2.participate__title Как участвовать
+                    ul.participate__list
+                        li.participate__item
+                            span.participate__step 1 шаг
+                            img.participate__img(src="../img/step1.png" alt="step1")
+                            p.participate__desc Заполните заявку для участия
+                            p.participate__desc у нас на странице
+                        li.participate__item
+                            span.participate__step 2 шаг
+                            img.participate__img(src="../img/step2.png" alt="step2")
+                            p.participate__desc Напишите о своем родственнике,
+                            p.participate__desc принимавшем участие в Великой 
+                            p.participate__desc Отечественной войне
+                        li.participate__item
+                            span.participate__step 3 шаг
+                            img.participate__img(src="../img/step3.png" alt="step3")
+                            p.participate__desc Загрузите
+                            p.participate__desc фотографию. Готово!
+                    button.btn.participate__btn(id="participate__btn") Отправить заявку
+            section.participants.participants__section(id="section-2")
+                .container.participants__container
+                    h2.participants__title Участники
+                    ul.participants__list
+                        li.participants__item
+                            .participants__photo
+                                img.participants__photo__img(src="../img/photo1.png" alt="photo1")
+                                span.participants__photo__name Имя Фамилия
+                            .participants__desc
+                                p.participants__desc__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices bibendum viverra aliquam duis vehicula vitae sit varius urna. Convallis euismod venenatis cursus arcu elementum blandit massa euismod blandit. Porttitor ultrices ultricies cras morbi sit. Et, sed nibh egestas aliquam faucibus egestas. Magnis quis egestas scelerisque vivamus ornare. Quis in phasellus pharetra, tortor metus. Diam tristique sociis nec imperdiet in viverra egestas et. Vitae, tempus est convallis pulvinar pharetra tristique aliquet. Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem. Vel eu odio pharetra, lacus a, diam. Enim quis blandit senectus lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl, orci purus viverra nisl eget. Volutpat sit neque condimentum odio sit vitae sed felis urna. Tortor orci amet, pellentesque odio. Ultricies iaculis aenean sem nec. Consectetur ac iaculis varius rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in interdum. Semper sodales augue nec morbi dignissim facilisis. Sed malesuada leo morbi quam dui nibh suspendisse non non. Eu eget adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim a euismod. Risus semper nunc condimentum nisl et cras neque proin nam. In nisi duis ornare diam ultrices mi massa vitae.
+                                .participants__desc__footer
+                                    .participants__desc__about
+                                        p.participants__desc__name Имя Фамилия (правнучка)
+                                        p.participants__desc__city г. Москва
+                                    .participants__desc__social
+                                        ul.participants__desc__social-list
+                                            li.participants__desc__social-item
+                                                a(href='https://ok.ru/' target='_blank')
+                                                    img(src="../img/ok.png" alt="ok")
+                                            li.participants__desc__social-item
+                                                a(href='https://ru-ru.facebook.com/' target='_blank')
+                                                    img(src="../img/fb.png" alt="fb")
+                                            li.participants__desc__social-item
+                                                a(href='https://vk.com/' target='_blank')
+                                                    img(src="../img/vk.png" alt="vk")
+                        li.participants__item
+                            .participants__photo
+                                img.participants__photo__img(src="../img/photo2.png" alt="photo1")
+                                span.participants__photo__name Имя Фамилия
+                            .participants__desc
+                                p.participants__desc__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices bibendum viverra aliquam duis vehicula vitae sit varius urna. Convallis euismod venenatis cursus arcu elementum blandit massa euismod blandit. Porttitor ultrices ultricies cras morbi sit. Et, sed nibh egestas aliquam faucibus egestas. Magnis quis egestas scelerisque vivamus ornare. Quis in phasellus pharetra, tortor metus. Diam tristique sociis nec imperdiet in viverra egestas et. Vitae, tempus est convallis pulvinar pharetra tristique aliquet. Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem. Vel eu odio pharetra, lacus a, diam. Enim quis blandit senectus lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl, orci purus viverra nisl eget. Volutpat sit neque condimentum odio sit vitae sed felis urna. Tortor orci amet, pellentesque odio. Ultricies iaculis aenean sem nec. Consectetur ac iaculis varius rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in interdum. Semper sodales augue nec morbi dignissim facilisis. Sed malesuada leo morbi quam dui nibh suspendisse non non. Eu eget adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim a euismod. Risus semper nunc condimentum nisl et cras neque proin nam. In nisi duis ornare diam ultrices mi massa vitae.
+                                .participants__desc__footer
+                                    .participants__desc__about
+                                        p.participants__desc__name Имя Фамилия (правнук)
+                                        p.participants__desc__city г. Москва
+                                    .participants__desc__social
+                                        ul.participants__desc__social-list
+                                            li.participants__desc__social-item
+                                                a(href='https://ok.ru/' target='_blank')
+                                                    img(src="../img/ok.png" alt="ok")
+                                            li.participants__desc__social-item
+                                                a(href='https://ru-ru.facebook.com/' target='_blank')
+                                                    img(src="../img/fb.png" alt="fb")
+                                            li.participants__desc__social-item
+                                                a(href='https://vk.com/' target='_blank')
+                                                    img(src="../img/vk.png" alt="vk")
+                        li.participants__item
+                            .participants__photo
+                                img.participants__photo__img(src="../img/photo1.png" alt="photo1")
+                                span.participants__photo__name Имя Фамилия
+                            .participants__desc
+                                p.participants__desc__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices bibendum viverra aliquam duis vehicula vitae sit varius urna. Convallis euismod venenatis cursus arcu elementum blandit massa euismod blandit. Porttitor ultrices ultricies cras morbi sit. Et, sed nibh egestas aliquam faucibus egestas. Magnis quis egestas scelerisque vivamus ornare. Quis in phasellus pharetra, tortor metus. Diam tristique sociis nec imperdiet in viverra egestas et. Vitae, tempus est convallis pulvinar pharetra tristique aliquet. Imperdiet vulputate turpis velit tincidunt volutpat eu pulvinar sed nec. Quam ornare sit vel rhoncus quam. Hac sed vitae in morbi sem. Vel eu odio pharetra, lacus a, diam. Enim quis blandit senectus lobortis pharetra feugiat. Mi venenatis et sagittis semper. Nisl, orci purus viverra nisl eget. Volutpat sit neque condimentum odio sit vitae sed felis urna. Tortor orci amet, pellentesque odio. Ultricies iaculis aenean sem nec. Consectetur ac iaculis varius rhoncus arcu. Facilisis pharetra, tincidunt nibh quam consequat in interdum. Semper sodales augue nec morbi dignissim facilisis. Sed malesuada leo morbi quam dui nibh suspendisse non non. Eu eget adipiscing tincidunt erat etiam. Aliquam, sed mauris, etiam sollicitudin mauris, augue vitae nulla et. Hendrerit a, ac dignissim a euismod. Risus semper nunc condimentum nisl et cras neque proin nam. In nisi duis ornare diam ultrices mi massa vitae.
+                                .participants__desc__footer
+                                    .participants__desc__about
+                                        p.participants__desc__name Имя Фамилия (правнучка)
+                                        p.participants__desc__city г. Москва
+                                    .participants__desc__social
+                                        ul.participants__desc__social-list
+                                            li.participants__desc__social-item
+                                                a(href='https://ok.ru/' target='_blank')
+                                                    img(src="../img/ok.png" alt="ok")
+                                            li.participants__desc__social-item
+                                                a(href='https://ru-ru.facebook.com/' target='_blank')
+                                                    img(src="../img/fb.png" alt="fb")
+                                            li.participants__desc__social-item
+                                                a(href='https://vk.com/' target='_blank')
+                                                    img(src="../img/vk.png" alt="vk")
+                    .pagination
+                        ul.pagination__list
+                            li.pagination__item
+                                a.pagination__link.pagination__prev(href="#")
+                                    img(src="../img/sprite.svg#prev" alt="prev")
+                            li.pagination__item
+                                a.pagination__link.active(href="#") 1
+                            li.pagination__item
+                                a.pagination__link(href="#") 2
+                            li.pagination__item
+                                a.pagination__link(href="#") 3
+                            li.pagination__item
+                                a.pagination__link.pagination__next(href="#")
+                                    img(src="../img/sprite.svg#next" alt="next")
+            section.news(id="section-3")
+                .container.news__container
+                    h2.news__title Новости
+                    img(src="../img/news.png" alt="news")
+        .modal.closed(id="modal")
+            form.form
+                h2.form__title Подать заявку
+                .form__row
+                    label.form__label(for="name") Ваше имя и фамилия
+                    input.form__input.field(type="text" name="name") 
+                .form__row
+                    label.form__label(for="city") Город
+                    input.form__input.field(type="text" name="city") 
+                .form__row.form__row--double
+                    .form__row
+                        label.form__label(for="phone") Телефон
+                        input.form__input.field(type="tel" name="phone") 
+                    .form__row
+                        label.form__label(for="email") Email
+                        input.form__input.field(type="text" name="email") 
+                .form__row
+                    label.form__label(for="relative") Имя и фамилия родственника
+                    input.form__input.field(type="text" name="relative") 
+                .form__row
+                    label.form__label(for="name") Кем вы приходитесь (внук, племянница и т.д.)
+                    input.form__input.field(type="text" name="name")
+                a.btn.form__btn Прикрепить фото
+                .form__row.form__row--textarea
+                    label.form__label(for="history") Напишите историю
+                    span До 3500 символов
+                    textarea.form__textarea.field(name="history")
+                button.btn.form__btn--submit(type="submit") Отправить
+            button.close-button(id="close-button")
+        .modal__validate.modal__validate--true.closed(id="modal-true") Ваша заявка отправлена
+            button.close-button(id="close-button-true")
+        .modal__validate.modal__validate--false.closed(id="modal-false") Все поля должны быть заполнены
+            button.close-button(id="close-button-false")
+        .modal-overlay.closed(id="modal-overlay")
+        .hamburger-menu
+            .hamburger-menu__link
+        .popup
+            .popup__menu
+            button.popup__close
+            nav
+                ul.popup__list
+                    each val, index in ['Главная', 'Как участвовать', 'Участники', 'Новости']
+                        a.popup__item.scroll-to(href='#section-' + index)= val
+    script(src="../js/main.js")
