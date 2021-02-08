@@ -151,11 +151,16 @@
         &__title {
             font-size: 34px;
         }
-        &__text, &__logo {
-            width: 300px;
+        &__logo {
+            width: 260px;
+            background-size: 75px,175px;
         }
         &__mobile-text {
-            left: 110px;
+            top: 65px;
+            left: 95px;
+        }
+        &__text {
+            width: 300px;
         }
     }
 }

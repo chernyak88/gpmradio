@@ -66,7 +66,7 @@ const svgSprites = () => {
 }
 
 const styles = () => {
-	return src('./src/scss/**/*.scss')
+	return src('./src/scss/main.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass({
 			includePaths : ['./src/scss/'],
